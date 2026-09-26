@@ -3,6 +3,7 @@
 ## Objective
 Applied RFM analysis and K-Means clustering to segment customers based on 
 purchasing behaviour, enabling targeted marketing strategies.
+   🔗 **Live App:** [Try the Customer Segment Predictor](https://oibsip-vvnaq5jfwpgkhizsatfyns.streamlit.app)
 
 ## Dataset
 [Online Retail II (UCI, via Kaggle)](https://archive.ics.uci.edu/dataset/502/online+retail+ii)
