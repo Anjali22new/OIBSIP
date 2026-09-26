@@ -2,10 +2,14 @@ import streamlit as st
 import joblib
 import numpy as np
 import pandas as pd
+import os
+
+# Get the folder this script lives in, so file paths work regardless of working directory
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Load the saved model and scaler
-kmeans = joblib.load('kmeans_model.pkl')
-scaler = joblib.load('rfm_scaler.pkl')
+kmeans = joblib.load(os.path.join(BASE_DIR, 'kmeans_model.pkl'))
+scaler = joblib.load(os.path.join(BASE_DIR, 'rfm_scaler.pkl'))
 
 st.set_page_config(page_title="Customer Segmentation", page_icon="📊")
 st.title("📊 Customer Segment Predictor")
